@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Panel de Administración</h2>
+        <div class="stats">
+            <h3>Estadísticas de Tickets</h3>
+            <p>Total de Tickets: <span id="total-tickets"></span></p>
+            <p>Pendientes: <span id="pending-tickets"></span></p>
+            <p>En Proceso: <span id="in-process-tickets"></span></p>
+            <p>Resueltos: <span id="resolved-tickets"></span></p>
+            <p>Cancelados: <span id="cancelled-tickets"></span></p>
+            <p>En Pausa: <span id="on-hold-tickets"></span></p>
+        </div>
+        <div class="charts">
+            <canvas id="ticketChart"></canvas>
+            <canvas id="departmentChart"></canvas>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container, .ticket-container, .dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.stats {
+    margin-bottom: 30px;
+}
+
+.stats p {
+    font-size: 14px;
+    color: #333;
+}
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chart {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.specialists-info {
+    margin-top: 30px;
+}
+
+.specialists-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specialists-info th, .specialists-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.specialists-info th {
+    background-color: #f2f2f2;
+    color: #333;
+}
